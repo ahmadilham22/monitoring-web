@@ -21,6 +21,7 @@ use App\Http\Controllers\UserController;
 Route::get('/server', [ServerController::class, 'index']);
 Route::get('/port', [PortController::class, 'index']);
 Route::get('/datafb', [DataController::class, 'facebook']);
+Route::get('/datatw', [DataController::class, 'twitter']);
 
 // Public Route User
 Route::get('/users', [UserController::class, 'index']);
