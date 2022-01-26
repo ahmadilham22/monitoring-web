@@ -13,4 +13,18 @@ class DataController extends Controller
         $data = $response->json();
         return $data;
     }
+
+    public function twitter()
+    {
+        $response = Http::get('https://61ee53a9d593d20017dbad62.mockapi.io/datatwitter');
+        $data = $response->json();
+        return $data;
+    }
+
+    public function youtube()
+    {
+        $response = Http::get('https://61ee53a9d593d20017dbad62.mockapi.io/datafacebook');
+        $data = $response->json();
+        return $data;
+    }
 }
